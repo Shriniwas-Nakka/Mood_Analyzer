@@ -24,4 +24,10 @@ public class MoodAnalyzer {
         this.message = message;
         return analyzeMood();
     }
+
+    public boolean equals(Object another) {
+        if (this.message.equals(((MoodAnalyzer)another).message))
+            return true;
+        return false;
+    }
 }

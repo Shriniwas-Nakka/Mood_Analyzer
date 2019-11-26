@@ -29,6 +29,7 @@ public class MoodAnalyzerTest {
     }
 
     @Test
+<<<<<<< HEAD
     public void givenMessage_WhenEmpty_ShouldReturnHappy() {
         MoodAnalyzer moodAnalyzer = new MoodAnalyzer("Please enter proper message");
         try {
@@ -38,5 +39,10 @@ public class MoodAnalyzerTest {
         {
             Assert.assertEquals("Please enter proper message", e.getMessage());
         }
+=======
+    public void givenMoodAnalyser_WhenProper_ShouldReturnObject() {
+        MoodAnalyzer moodAnalyser = MoodAnalyserFactory.createMoodAnalyser("SAD");
+        Assert.assertEquals(new MoodAnalyzer("SAD"), moodAnalyser);
+>>>>>>> UC4_Reflection
     }
 }
