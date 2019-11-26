@@ -43,7 +43,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.MoodAnalyzerTest">
+  <component name="RunManager" selected="Gradle.MoodAnalyzerTest.givenMessage_WhenHappy_ShouldReturnHappy">
     <configuration name="MoodAnalyzerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -106,9 +106,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.MoodAnalyzerTest" />
-        <item itemvalue="Gradle.MoodAnalyzerTest.givenMessage_WhenSad_ShouldReturnSad" />
         <item itemvalue="Gradle.MoodAnalyzerTest.givenMessage_WhenHappy_ShouldReturnHappy" />
+        <item itemvalue="Gradle.MoodAnalyzerTest.givenMessage_WhenSad_ShouldReturnSad" />
+        <item itemvalue="Gradle.MoodAnalyzerTest" />
       </list>
     </recent_temporary>
   </component>
