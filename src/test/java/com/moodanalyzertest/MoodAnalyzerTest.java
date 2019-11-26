@@ -29,6 +29,17 @@ public class MoodAnalyzerTest {
     }
 
     @Test
+    public void givenMessage_WhenEmpty_ShouldReturnHappy() {
+        MoodAnalyzer moodAnalyzer = new MoodAnalyzer("Please enter proper message");
+        try {
+            String mood = moodAnalyzer.analyzeMood("");
+            Assert.assertEquals("Please enter proper message", mood);
+        } catch (MoodAnalysisException e) {
+            Assert.assertEquals("Please enter proper message", e.getMessage());
+        }
+    }
+
+    @Test
     public void givenMoodAnalyser_WhenProper_ShouldReturnObject() throws MoodAnalysisException {
         MoodAnalyzer moodAnalyzer = new MoodAnalyzer();
         MoodAnalyzer moodAnalyserFactory = MoodAnalyserFactory.createMoodAnalyser();
