@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.moodanalyzertest.MoodAnalyzerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-26T07:01:20" hostname="suraj-desktop" time="0.001">
+<testsuite name="com.moodanalyzertest.MoodAnalyzerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-26T08:44:29" hostname="suraj-desktop" time="0.001">
   <properties/>
   <testcase name="givenMoodAnalyser_WhenProper_ShouldReturnObject" classname="com.moodanalyzertest.MoodAnalyzerTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>

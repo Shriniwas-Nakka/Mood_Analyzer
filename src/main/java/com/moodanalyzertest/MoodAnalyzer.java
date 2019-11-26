@@ -1,10 +1,14 @@
 package com.moodanalyzertest;
 
 public class MoodAnalyzer {
-    private String message;
+    private String message=null;
 
     public MoodAnalyzer(String message) {
         this.message = message;
+    }
+
+    public MoodAnalyzer() {
+
     }
 
     public String analyzeMood() throws MoodAnalysisException {
@@ -25,8 +29,8 @@ public class MoodAnalyzer {
         return analyzeMood();
     }
 
-    public boolean equals(Object another) {
-        if (this.message.equals(((MoodAnalyzer)another).message))
+    public boolean equals(MoodAnalyzer another) {
+        if (this.message == (another.message))
             return true;
         return false;
     }
