@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.moodanalyzertest.MoodAnalyzerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-26T10:49:01" hostname="suraj-desktop" time="0.001">
+<testsuite name="com.moodanalyzertest.MoodAnalyzerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-26T10:55:30" hostname="suraj-desktop" time="0.002">
   <properties/>
-  <testcase name="givenMoodAnalyserWithString_WhenProper_ShouldReturnObject" classname="com.moodanalyzertest.MoodAnalyzerTest" time="0.001"/>
+  <testcase name="givenMoodAnalyserWithString_WhenClassNameNotProper_ShouldReturnClassNotFound" classname="com.moodanalyzertest.MoodAnalyzerTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

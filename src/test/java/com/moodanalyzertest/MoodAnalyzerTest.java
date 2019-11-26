@@ -75,4 +75,15 @@ public class MoodAnalyzerTest {
         Assert.assertEquals(true,moodAnalyzer.equals(moodAnalyserFactory));
     }
 
+    @Test
+    public void givenMoodAnalyserWithString_WhenClassNameNotProper_ShouldReturnClassNotFound(){
+        try {
+            MoodAnalyzer moodAnalyzer = new MoodAnalyzer("Class Not Found");
+            MoodAnalyzer moodAnalyserFactory = MoodAnalyserFactory.createStringMoodAnalyser("Class Not Found");
+            Assert.assertEquals(true, moodAnalyzer.equals(moodAnalyserFactory));
+        } catch (MoodAnalysisException e) {
+            Assert.assertEquals(MoodAnalysisException.ExceptionType.NO_SUCH_CLASS, e.type);
+        }
+    }
+
 }
