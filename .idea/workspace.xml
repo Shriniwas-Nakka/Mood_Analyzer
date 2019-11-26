@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baf2023e-35e8-4a84-b7af-1de50001724e" name="Default Changelist" comment="">
+    <list default="true" id="5c0d8d78-a8f5-41e2-ba47-9a3a57a66eb2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -18,8 +18,12 @@
 =======
 =======
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/moodanalyzertest/MoodAnalyserFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/moodanalyzertest/MoodAnalyserFactory.class" afterDir="false" />
+<<<<<<< HEAD
 >>>>>>> UC4_Reflection
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/moodanalyzertest/MoodAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/moodanalyzertest/MoodAnalyzer.class" afterDir="false" />
+>>>>>>> UC4_Reflection
+=======
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/moodanalyzertest/MoodAnalysisException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/moodanalyzertest/MoodAnalysisException.class" afterDir="false" />
 >>>>>>> UC4_Reflection
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/moodanalyzertest/MoodAnalyzerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/moodanalyzertest/MoodAnalyzerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.moodanalyzertest.MoodAnalyzerTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.moodanalyzertest.MoodAnalyzerTest.html" afterDir="false" />
@@ -32,8 +36,12 @@
 =======
 =======
       <change beforePath="$PROJECT_DIR$/src/main/java/com/moodanalyzertest/MoodAnalyserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moodanalyzertest/MoodAnalyserFactory.java" afterDir="false" />
+<<<<<<< HEAD
 >>>>>>> UC4_Reflection
       <change beforePath="$PROJECT_DIR$/src/main/java/com/moodanalyzertest/MoodAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moodanalyzertest/MoodAnalyzer.java" afterDir="false" />
+>>>>>>> UC4_Reflection
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moodanalyzertest/MoodAnalysisException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moodanalyzertest/MoodAnalysisException.java" afterDir="false" />
 >>>>>>> UC4_Reflection
       <change beforePath="$PROJECT_DIR$/src/test/java/com/moodanalyzertest/MoodAnalyzerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/moodanalyzertest/MoodAnalyzerTest.java" afterDir="false" />
     </list>
@@ -150,12 +158,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MoodAnalyzerTest.givenMessage_WhenSad_ShouldReturnSad" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MoodAnalyzerTest.givenMoodAnalyser_WhenClassNameNotProper_ShouldReturnClassNotFound" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.moodanalyzertest.MoodAnalyzerTest.givenMessage_WhenSad_ShouldReturnSad&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.moodanalyzertest.MoodAnalyzerTest.givenMoodAnalyser_WhenClassNameNotProper_ShouldReturnClassNotFound&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -217,13 +225,16 @@
 =======
         <item itemvalue="Gradle.MoodAnalyzerTest.givenMoodAnalyser_WhenProper_ShouldReturnObject" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> UC4_Reflection
 =======
+=======
+        <item itemvalue="Gradle.MoodAnalyzerTest.givenMoodAnalyser_WhenClassNameNotProper_ShouldReturnClassNotFound" />
+>>>>>>> UC4_Reflection
         <item itemvalue="Gradle.MoodAnalyzerTest" />
 >>>>>>> UC4_Reflection
         <item itemvalue="Gradle.MoodAnalyzerTest.givenNullMood_ShouldReturnHappy" />
         <item itemvalue="Gradle.MoodAnalyzerTest.givenMessage_WhenHappy_ShouldReturnHappy" />
-        <item itemvalue="Gradle.MoodAnalyzerTest.givenMessage_WhenSad_ShouldReturnSad" />
       </list>
     </recent_temporary>
   </component>
@@ -245,7 +256,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
