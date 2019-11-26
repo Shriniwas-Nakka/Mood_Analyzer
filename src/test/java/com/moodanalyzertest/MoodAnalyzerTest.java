@@ -86,4 +86,14 @@ public class MoodAnalyzerTest {
         }
     }
 
+    @Test
+    public void givenMoodAnalyserWithString_WhenConstructorNotProper_ShouldReturnMethodNotFound(){
+        try {
+            MoodAnalyzer moodAnalyzer = new MoodAnalyzer("Method Not Found");
+            MoodAnalyzer moodAnalyserFactory = MoodAnalyserFactory.createStringMoodAnalyser("Method Not Found");
+            Assert.assertEquals(true, moodAnalyzer.equals(moodAnalyserFactory));
+        } catch (MoodAnalysisException e) {
+            Assert.assertEquals(MoodAnalysisException.ExceptionType.NO_SUCH_METHOD, e.type);
+        }
+    }
 }
