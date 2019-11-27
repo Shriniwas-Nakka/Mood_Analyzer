@@ -1,9 +1,10 @@
 package com.moodanalyzertest;
 
 import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 
-public class MoodAnalyserFactory {
+public class MoodAnalyserReflector {
     public static MoodAnalyzer createMoodAnalyser() throws MoodAnalysisException {
         try {
             Class<?> moodanalyserClass = Class.forName("com.moodanalyzertest.MoodAnalyzer");
@@ -42,5 +43,29 @@ public class MoodAnalyserFactory {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public static Object invokeMethod(Object moodAnalyserObj, String methodName) throws MoodAnalysisException {
+        try {
+           return moodAnalyserObj.getClass().getMethod(methodName).invoke(moodAnalyserObj);
+        } catch (NoSuchMethodException e) {
+            throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.NO_SUCH_METHOD, "Method not Found");
+        } catch (IllegalAccessException  e) {
+            throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.NO_ACCESS, "No Access", e);
+        }catch (InvocationTargetException  e) {
+            throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.METHOD_INVOCATION_ISSUE, "May be issues with values", e);
+        }
+    }
+
+    public static void setFieldValue(Object moodObj, String fieldName, String fieldValue) throws MoodAnalysisException {
+        try {
+            Field field = moodObj.getClass().getDeclaredField(fieldName);
+            field.setAccessible(true);
+            field.set(moodObj, fieldValue);
+        } catch (NoSuchFieldException e) {
+            throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.NO_SUCH_FIELD, "Define proper field name");
+        } catch (IllegalAccessException e) {
+            throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.NO_ACCESS, e);
+        }
     }
 }
